@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms-Project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Adventure Travel Club</h1>
+        <p>Begin your journey with fellow adventurers</p>
+
+        <div class="item item1">
+            <h3>Personal Information</h3>
+                <form class="form">
+                    <div class="item-1">
+                        <label for="fname" class="labelchange">First Name</label><br>
+                        <input type="text" id="fname" placeholder="John">
+                    </div>
+                    <div class="item-2">
+                        <label for="lname" class="labelchange">Last Name</label><br>
+                        <input type="text" id="lname" placeholder=" Doe" required>
+                    </div>
+                    <div class="item-3">
+                        <label for="email" class="labelchange">Email Address</label><br>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="item-4">
+                        <label for="Date" class="labelchange">Date of Birth</label><br>
+                        <input type="date" id="Date" required>
+                    </div>
+                </form>
+        </div>
+            
+        <div class="item item2">
+                <h3>Adventure Preferences</h3>
+                <form class="form2">
+                    <div>
+                        <label for="level" class="labelchange">Experience level</label><br>
+                        <select id="level" name="level" required>
+                            <option value="">Select your level of Experience</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <label for="checkbox">Prefered Activities</label>
+                        <div class="form3">
+                            <div>
+                                <input type="checkbox" id="option 1" name="interest" required>
+                                <label for="option 1">hiking</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="option 2" name="interest" required>
+                                <label for="option 2">Rock Climbing</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="option 3" name="interest" required>
+                                <label for="option 3">Kayaking</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="option 4" name="interest" required>
+                                <label for="option 4">Scuba Diving</label>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                    <div class="selectbox">
+                        <label>Prefered Trip Duration</label>
+                        <div class="form4">
+                            <div>
+                                <input type="radio" id="option1" name="Duration"  required>
+                                <label for="option1">Weekend Trips (2-3 days)</label>
+                            </div>
+                            <div> 
+                                <input type="radio" id="option2" name="Duration" required>
+                                <label for="option2">Week-long Adventures (5-7 days)</label>
+                            </div>
+                            <div> 
+                                <input type="radio" id="option3" name="Duration" required>
+                                <label for="option3">Extended Expiditions (2+ weeks)</label>
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+        </div>
+            
+        <div class="item item-3">
+            <h3>Additional Information</h3>
+            <form class="form5">
+                <label for="range">Fitness Level</label><br>
+                <input type="range" id="range" name="slider" min="1" max="10">
+                <div>
+                    <label for="bio" class="labelchange">Tell Us about yourself</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Enter your bio here..."></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="PhotoP"  class="labelchange">Profile Photo</label><br>
+                    <input type="file" id="PhotoP" name="PhotoP" accept=".pdf,.doc,.docx" style="border: 1px solid black;">
+                </div>
+            </form>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox-g" name="interest" required>
+            <label for="checkbox-g">I agree to the Terms and Conditions and Privacy</label>
+            <button>submit</button>
+        </div>
+    </div>
+</body>
+</html>
